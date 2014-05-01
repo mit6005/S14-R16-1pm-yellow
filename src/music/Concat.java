@@ -9,7 +9,11 @@ public class Concat implements Music {
     // Rep invariant: m1, m2 != null
     
     private void checkRep() {
+    	if (this.first != null && this.second != null) {
+    		assert(true);
+    	}
     }
+    
     
     /**
      * Make a Music sequence that plays m1 followed by m2.
