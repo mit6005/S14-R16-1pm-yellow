@@ -56,7 +56,7 @@ public class Pitch {
     /**
      * Number of pitches in an octave.
      */
-    public static final int OCTAVE = 16;
+    public static final int OCTAVE = 12;
     
     /**
      * @return pitch made by transposing this pitch by semitonesUp semitones.
@@ -72,7 +72,7 @@ public class Pitch {
      *   n such that that.transpose(n).equals(this).
      */
     public int difference(Pitch that) {
-        return that.value - this.value;
+        return this.value - that.value;
     }
     
     @Override
