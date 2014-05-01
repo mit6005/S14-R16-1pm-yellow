@@ -8,8 +8,10 @@ public class Concat implements Music {
     private final Music second;
     // Rep invariant: m1, m2 != null
     
-    private boolean checkRep() {
-    	return (this.first != null && this.second != null);
+    private void checkRep() {
+    	if (this.first != null && this.second != null) {
+    		assert(true);
+    	}
     }
     
     
